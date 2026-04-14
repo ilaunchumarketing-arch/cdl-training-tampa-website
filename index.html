@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>CDL Training of Tampa | Class A CDL - $3,000 | Test Included</title>
+    <meta name="description" content="Get your Class A CDL in just 4 weeks. Automatic transmission. On-site testing. $3,000 all-inclusive. Bilingual instructors. Enroll now!">
+    <link rel="icon" type="image/png" href="log.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior:smooth; }
+        body { font-family:'Inter',sans-serif; background:#0A0A0A; color:#fff; overflow-x:hidden; }
+
+        /* HERO */
+        .hero {
+            min-height:100vh; position:relative; display:flex; align-items:center;
+            background:linear-gradient(180deg, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.85) 100%), url('https://static.wixstatic.com/media/0fbf32_f1b7b4518c3347c9978676a71cb8d788~mv2.jpg/v1/fill/w_1920,h_1080,al_c,q_85,enc_auto/image.jpg') center/cover no-repeat;
+        }
+        .hero-content { max-width:900px; margin:0 auto; padding:8rem 2rem 4rem; text-align:center; }
+
+        .callout {
+            display:inline-block; background:#D1232A; color:white; padding:10px 28px;
+            font-family:'Oswald',sans-serif; font-size:1rem; font-weight:700;
+            text-transform:uppercase; letter-spacing:.15em; margin-bottom:1.5rem;
+            transform:rotate(-2deg); border-radius:4px;
+        }
+
+        .hero h1 {
+            font-family:'Oswald',sans-serif; font-size:clamp(2.5rem,7vw,5rem);
+            font-weight:700; text-transform:uppercase; line-height:1.05;
+            margin-bottom:1.5rem; letter-spacing:-0.02em;
+        }
+        .hero h1 .price { color:#FFB800; display:block; font-size:clamp(3rem,9vw,6.5rem); }
+        .hero h1 .sub { color:#ccc; font-size:clamp(1.2rem,3vw,2rem); font-weight:500; letter-spacing:0.05em; }
+
+        .hero-features {
+            display:flex; justify-content:center; gap:2rem; flex-wrap:wrap;
+            margin:2rem 0; padding:1.5rem 0; border-top:1px solid rgba(255,255,255,0.1);
+            border-bottom:1px solid rgba(255,255,255,0.1);
+        }
+        .hero-feat {
+            display:flex; align-items:center; gap:8px; font-size:.95rem; font-weight:600;
+            color:#FFB800; text-transform:uppercase; letter-spacing:.05em;
+        }
+        .hero-feat .check { color:#22C55E; font-size:1.2rem; }
+
+        .cta-group { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:2rem; }
+        .btn-fire {
+            background:linear-gradient(135deg, #D1232A 0%, #FF3B42 100%);
+            color:white; padding:20px 48px; border-radius:8px; font-family:'Oswald',sans-serif;
+            font-size:1.3rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em;
+            text-decoration:none; display:inline-flex; align-items:center; gap:12px;
+            transition:all .3s; border:none; cursor:pointer;
+            box-shadow:0 4px 30px rgba(209,35,42,0.4);
+        }
+        .btn-fire:hover { transform:translateY(-3px) scale(1.02); box-shadow:0 8px 40px rgba(209,35,42,0.5); }
+            background:transparent; color:#FFB800; padding:20px 48px; border-radius:8px;
+            font-family:'Oswald',sans-serif; font-size:1.3rem; font-weight:700;
+            text-transform:uppercase; letter-spacing:.1em; text-decoration:none;
+            display:inline-flex; align-items:center; gap:12px;
+            border:2px solid #FFB800; transition:all .3s;
+        }
+
+        .urgency {
+            margin-top:2rem; background:rgba(255,184,0,0.1); border:1px solid rgba(255,184,0,0.3);
+            padding:12px 24px; border-radius:8px; display:inline-block;
+            font-weight:700; color:#FFB800; font-size:.9rem; text-transform:uppercase;
+            letter-spacing:.1em; animation:pulse 2s infinite;
+        }
+        @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.7} }
+
+        /* WHAT YOU GET */
+        .section { padding:5rem 0; }
+        .container { max-width:1000px; margin:0 auto; padding:0 2rem; }
+        .section-dark { background:#111; }
+
+        .section-title {
+            font-family:'Oswald',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem);
+            font-weight:700; text-transform:uppercase; text-align:center;
+            margin-bottom:3rem; letter-spacing:-.01em;
+        }
+        .section-title span { color:#FFB800; }
+
+        .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+        .card {
+            background:#1A1A1A; border:1px solid #333; border-radius:12px; padding:2rem;
+            transition:all .3s;
+        }
+        .card:hover { border-color:#FFB800; transform:translateY(-2px); }
+        .card-icon { font-size:2rem; margin-bottom:1rem; }
+        .card h3 { font-family:'Oswald',sans-serif; font-size:1.2rem; text-transform:uppercase; margin-bottom:.5rem; color:#FFB800; }
+        .card p { color:#999; font-size:.9rem; line-height:1.7; }
+
+        /* OFFER STACK */
+        .stack {
+            background:#111; border:2px solid #FFB800; border-radius:16px;
+            padding:3rem; max-width:700px; margin:0 auto;
+        }
+        .stack-item {
+            display:flex; justify-content:space-between; align-items:center;
+            padding:1rem 0; border-bottom:1px solid #222;
+        }
+        .stack-item:last-child { border-bottom:none; }
+        .stack-item .label { font-size:1rem; font-weight:600; }
+        .stack-item .value { font-family:'Oswald',sans-serif; font-size:1.1rem; color:#FFB800; font-weight:700; }
+        .stack-total {
+            margin-top:1.5rem; text-align:center; padding-top:1.5rem;
+            border-top:2px solid #FFB800;
+        }
+        .stack-total .old { font-size:1.5rem; color:#666; text-decoration:line-through; }
+        .stack-total .new { font-family:'Oswald',sans-serif; font-size:3.5rem; color:#22C55E; font-weight:700; }
+        .stack-total .save { color:#FFB800; font-size:1rem; font-weight:700; margin-top:.5rem; }
+
+        /* FORM */
+        .form-section {
+            background:linear-gradient(180deg, #0A0A0A 0%, #1A1A1A 100%);
+            padding:5rem 0;
+        }
+        .form-box {
+            background:#111; border:2px solid #D1232A; border-radius:16px;
+            padding:3rem; max-width:600px; margin:0 auto;
+        }
+        .form-box h2 {
+            font-family:'Oswald',sans-serif; font-size:2rem; text-transform:uppercase;
+            text-align:center; margin-bottom:.5rem;
+        }
+        .form-box .sub { text-align:center; color:#999; margin-bottom:2rem; font-size:.9rem; }
+        .form-group { margin-bottom:1rem; }
+        .form-group input, .form-group select {
+            width:100%; padding:14px 18px; background:#1A1A1A; border:1.5px solid #333;
+            border-radius:8px; color:white; font-size:1rem; font-family:'Inter',sans-serif;
+            outline:none; transition:all .3s;
+        }
+        .form-group input:focus, .form-group select:focus { border-color:#FFB800; }
+        .form-group input::placeholder { color:#666; }
+        .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+        .btn-submit {
+            width:100%; margin-top:1rem; background:linear-gradient(135deg, #D1232A 0%, #FF3B42 100%);
+            color:white; padding:18px; border:none; border-radius:8px; font-family:'Oswald',sans-serif;
+            font-size:1.3rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em;
+            cursor:pointer; transition:all .3s;
+        }
+        .btn-submit:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(209,35,42,0.4); }
+        .form-trust {
+            display:flex; justify-content:center; gap:2rem; margin-top:1.5rem;
+            color:#666; font-size:.8rem;
+        }
+
+        /* BADGES */
+        .badges {
+            display:flex; justify-content:center; gap:3rem; align-items:center;
+            padding:3rem 0; flex-wrap:wrap;
+        }
+        .badges img { height:60px; opacity:.7; filter:grayscale(1) brightness(2); }
+
+        /* TESTIMONIALS */
+        .testimonial {
+            background:#1A1A1A; border-radius:12px; padding:2rem; margin-bottom:1.5rem;
+        }
+        .testimonial .stars { color:#FFB800; margin-bottom:.5rem; letter-spacing:4px; }
+        .testimonial p { color:#ccc; font-style:italic; line-height:1.7; margin-bottom:1rem; }
+        .testimonial .author { color:#FFB800; font-weight:700; font-size:.9rem; }
+
+        /* FOOTER CTA */
+        .final-cta {
+            background:#D1232A; padding:4rem 0; text-align:center;
+        }
+        .final-cta h2 {
+            font-family:'Oswald',sans-serif; font-size:clamp(2rem,5vw,3.5rem);
+            text-transform:uppercase; margin-bottom:1rem;
+        }
+        .final-cta p { font-size:1.1rem; margin-bottom:2rem; opacity:.9; }
+        .final-cta .btn-gold {
+            background:#FFB800; color:#0A0A0A; padding:20px 48px; border-radius:8px;
+            font-family:'Oswald',sans-serif; font-size:1.3rem; font-weight:700;
+            text-transform:uppercase; letter-spacing:.1em; text-decoration:none;
+            display:inline-flex; align-items:center; gap:12px; transition:all .3s;
+        }
+        .final-cta .btn-gold:hover { transform:translateY(-3px); box-shadow:0 8px 30px rgba(255,184,0,0.3); }
+
+        footer {
+            background:#0A0A0A; padding:2rem; text-align:center; color:#555; font-size:.8rem;
+            border-top:1px solid #222;
+        }
+
+        /* SUCCESS */
+        .success { text-align:center; padding:2rem; }
+        .success h3 { color:#22C55E; font-family:'Oswald',sans-serif; font-size:1.5rem; margin-bottom:.5rem; }
+
+        /* RESPONSIVE */
+        @media(max-width:640px) {
+            .grid-2 { grid-template-columns:1fr; }
+            .form-row { grid-template-columns:1fr; }
+            .hero-features { gap:1rem; }
+            .badges { gap:1.5rem; }
+            .badges img { height:40px; }
+        }
+
+        /* SPANISH TOGGLE */
+        .lang-bar {
+            position:fixed; top:0; width:100%; z-index:1000;
+            background:rgba(10,10,10,0.95); backdrop-filter:blur(10px);
+            padding:12px 2rem; display:flex; justify-content:space-between; align-items:center;
+            border-bottom:1px solid #222;
+        }
+        .lang-bar img { height:35px; }
+        .lang-bar a { color:#FFB800; font-weight:700; font-size:.85rem; text-decoration:none; }
+    </style>
+    <script src="https://unpkg.com/lucide@latest"></script>
+<!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1299008445453246");fbq("track","PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1299008445453246&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="lang-bar">
+    <img src="log.png" alt="CDL Training of Tampa">
+    <div style="display:flex;gap:1.5rem;align-items:center;">
+        <span style="color:#FFB800;font-size:.85rem;font-weight:700;">EN | ES</span>
+        
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="callout"><i data-lucide="zap" style="width:16px;height:16px;display:inline;vertical-align:middle;"></i> LIMITED SPOTS — NEXT CLASS STARTS SOON</div>
+        <h1>
+            GET YOUR CLASS A CDL<br>
+            <span class="price">$3,000</span>
+            <span class="sub">Test Included. No Hidden Fees. Period.</span>
+        </h1>
+
+        <div class="hero-features">
+            <div class="hero-feat"><i data-lucide="check" style="width:16px;height:16px;color:#22C55E;display:inline;vertical-align:middle;"></i> Automatic Transmission</div>
+            <div class="hero-feat"><i data-lucide="check" style="width:16px;height:16px;color:#22C55E;display:inline;vertical-align:middle;"></i> On-Site Testing</div>
+            <div class="hero-feat"><i data-lucide="check" style="width:16px;height:16px;color:#22C55E;display:inline;vertical-align:middle;"></i> 160-Hour Certificate</div>
+            <div class="hero-feat"><i data-lucide="check" style="width:16px;height:16px;color:#22C55E;display:inline;vertical-align:middle;"></i> Done in 4 Weeks</div>
+            <div class="hero-feat"><i data-lucide="check" style="width:16px;height:16px;color:#22C55E;display:inline;vertical-align:middle;"></i> Bilingual Instructors</div>
+        </div>
+
+        <div class="cta-group">
+            <a href="#enroll" class="btn-fire"><i data-lucide="flame" style="width:18px;height:18px;display:inline;vertical-align:middle;"></i> ENROLL NOW — LOCK YOUR SPOT →</a>
+            
+        </div>
+
+        <div class="urgency"><i data-lucide="alert-triangle" style="width:16px;height:16px;display:inline;vertical-align:middle;"></i> ONLY A FEW SEATS LEFT FOR THIS MONTH'S CLASS</div>
+    </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="section-title">Here's Exactly <span>What You Get</span></h2>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-icon"><i data-lucide="truck" style="width:28px;height:28px;color:#FFB800;"></i></div>
+                <h3>Class A CDL Training</h3>
+                <p>Full 160-hour program covering everything you need to pass your CDL exam and start earning. Automatic transmission trucks — no double clutching stress.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="clipboard-check" style="width:28px;height:28px;color:#FFB800;"></i></div>
+                <h3>On-Site Testing</h3>
+                <p>No driving to a separate testing center. Take your CDL exam right here at our facility. Less stress, more confidence, higher pass rates.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="graduation-cap" style="width:28px;height:28px;color:#FFB800;"></i></div>
+                <h3>160-Hour Certificate</h3>
+                <p>Receive your official 160-hour training certificate upon completion. Required by employers and meets all Florida DOE standards.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="languages" style="width:28px;height:28px;color:#FFB800;"></i></div>
+                <h3>Bilingual Instructors</h3>
+                <p>¿Hablas español? No problem. Our instructors teach in both English and Spanish so nothing gets lost in translation.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="clock" style="width:28px;height:28px;color:#FFB800;"></i></div>
+                <h3>Finish in 4 Weeks</h3>
+                <p>From zero to CDL in just 4 weeks. Our accelerated program gets you on the road and earning faster than anyone else in Tampa.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="briefcase" style="width:28px;height:28px;color:#FFB800;"></i></div>
+                <h3>Job Placement Assistance</h3>
+                <p>We connect you with trucking companies hiring NOW. Many of our graduates get job offers before they even finish the program.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OFFER STACK -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">The <span>$3,000 All-Inclusive</span> Package</h2>
+        <div class="stack">
+            <div class="stack-item"><span class="label">160-Hour CDL Training Program</span><span class="value">$4,500</span></div>
+            <div class="stack-item"><span class="label">CDL Permit Preparation</span><span class="value">$500</span></div>
+            <div class="stack-item"><span class="label">On-Site Skills Test</span><span class="value">$300</span></div>
+            <div class="stack-item"><span class="label">160-Hour Training Certificate</span><span class="value">$200</span></div>
+            <div class="stack-item"><span class="label">Job Placement Assistance</span><span class="value">$500</span></div>
+            <div class="stack-item"><span class="label">Bilingual Instruction</span><span class="value">INCLUDED</span></div>
+            <div class="stack-total">
+                <div class="old">Total Value: $6,000</div>
+                <div class="new">$3,000</div>
+                <div class="save">YOU SAVE $3,000 — EVERYTHING INCLUDED</div>
+            </div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+            <a href="#enroll" class="btn-fire"><i data-lucide="flame" style="width:18px;height:18px;display:inline;vertical-align:middle;"></i> CLAIM THIS DEAL NOW →</a>
+        </div>
+    </div>
+</section>
+
+<!-- SOCIAL PROOF GRADUATES -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="section-title">Real Graduates. <span>Real Results.</span></h2>
+        <p style="text-align:center;color:#999;margin-bottom:3rem;font-size:1.05rem;">These are actual CDL Training of Tampa graduates holding their certificates. You could be next.</p>
+        <div class="grad-grid">
+            <div class="grad-card">
+                <img src="grad1.jpg" alt="Anthony Lewis Friend - CDL Graduate">
+                <div class="grad-info">
+                    <div class="stars">★★★★★</div>
+                    <h3>Anthony Lewis Friend</h3>
+                    <p>"I got my CDL in 4 weeks just like they promised. The instructors were patient and explained everything clearly. Best decision I ever made."</p>
+                    <span class="grad-badge">Class A CDL Graduate</span>
+                </div>
+            </div>
+            <div class="grad-card">
+                <img src="grad2.jpg" alt="Alex Antonio Sepulveda Rosado - CDL Graduate">
+                <div class="grad-info">
+                    <div class="stars">★★★★★</div>
+                    <h3>Alex Sepulveda Rosado</h3>
+                    <p>"$3,000 for everything including the test? I called 5 other schools and nobody came close. The bilingual instructors made it easy."</p>
+                    <span class="grad-badge">Class A CDL Graduate</span>
+                </div>
+            </div>
+            <div class="grad-card">
+                <img src="grad3.jpg" alt="Alieski Rodriguez Cruz - CDL Graduate">
+                <div class="grad-info">
+                    <div class="stars">★★★★★</div>
+                    <h3>Alieski Rodriguez Cruz</h3>
+                    <p>"The on-site testing made everything so much easier. I was nervous but doing it at the same place I trained gave me confidence. Passed first try!"</p>
+                    <span class="grad-badge">Class A CDL Graduate</span>
+                </div>
+            </div>
+            <div class="grad-card">
+                <img src="grad4.jpg" alt="Juan Pablo Parra Gil - CDL Graduate with instructors">
+                <div class="grad-info">
+                    <div class="stars">★★★★★</div>
+                    <h3>Juan Pablo Parra Gil</h3>
+                    <p>"Automatic transmission was a game changer. The team made it easy and I had a job offer before I even graduated. Now earning $65K+ my first year."</p>
+                    <span class="grad-badge">Class A CDL Graduate</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .grad-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+    .grad-card { background:#1A1A1A; border:1px solid #333; border-radius:16px; overflow:hidden; transition:all .3s; }
+    .grad-card:hover { border-color:#FFB800; transform:translateY(-4px); box-shadow:0 10px 40px rgba(255,184,0,0.1); }
+    .grad-card img { width:100%; height:300px; object-fit:cover; object-position:center top; }
+    .grad-info { padding:1.5rem; }
+    .grad-info .stars { color:#FFB800; margin-bottom:.5rem; letter-spacing:3px; font-size:.9rem; }
+    .grad-info h3 { font-family:'Oswald',sans-serif; font-size:1.1rem; text-transform:uppercase; color:white; margin-bottom:.5rem; }
+    .grad-info p { color:#999; font-size:.9rem; line-height:1.6; font-style:italic; margin-bottom:1rem; }
+    .grad-badge { display:inline-block; background:rgba(255,184,0,0.1); border:1px solid rgba(255,184,0,0.3); color:#FFB800; padding:6px 16px; border-radius:6px; font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
+    @media(max-width:640px) { .grad-grid{grid-template-columns:1fr;} .grad-card img{height:250px;} }
+</style>
+
+<!-- BADGES -->
+<section class="section">
+    <div class="container">
+        <div class="badges">
+            <img src="fl-doe-logo.png" alt="Florida DOE">
+            <img src="us-dot-logo.png" alt="US DOT">
+            <div style="color:#FFB800;font-family:Oswald;font-size:1.2rem;font-weight:700;text-transform:uppercase;">Licensed & Approved by Florida DOE</div>
+        </div>
+    </div>
+</section>
+
+<!-- ENROLLMENT FORM -->
+<section class="form-section" id="enroll">
+    <div class="container">
+        <div class="form-box">
+            <h2><i data-lucide="flame" style="width:20px;height:20px;display:inline;vertical-align:middle;"></i> ENROLL NOW — SPOTS ARE LIMITED</h2>
+            <p class="sub">Fill this out and our team will contact you to lock your spot.</p>
+            <form id="enrollForm">
+                <div class="form-row">
+                    <div class="form-group"><input name="firstName" placeholder="First Name *" required></div>
+                    <div class="form-group"><input name="lastName" placeholder="Last Name *" required></div>
+                </div>
+                <div class="form-group"><input name="phone" type="tel" placeholder="Phone Number *" required></div>
+                <div class="form-group"><input name="email" type="email" placeholder="Email Address *" required></div>
+                <div class="form-group">
+                    <select name="language">
+                        <option value="">Preferred Language</option>
+                        <option value="English">English</option>
+                        <option value="Spanish">Español</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select name="start">
+                        <option value="">When do you want to start?</option>
+                        <option value="ASAP">As soon as possible</option>
+                        <option value="This month">This month</option>
+                        <option value="Next month">Next month</option>
+                        <option value="Just exploring">Just exploring options</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit"><i data-lucide="flame" style="width:18px;height:18px;display:inline;vertical-align:middle;"></i> RESERVE MY SPOT NOW →</button>
+                <div class="form-trust">
+                    <span><i data-lucide="shield-check" style="width:14px;height:14px;display:inline;vertical-align:middle;"></i> 100% Secure</span>
+                    <span><i data-lucide="phone" style="width:14px;height:14px;display:inline;vertical-align:middle;"></i> We'll contact you shortly</span>
+                    <span><i data-lucide="check-circle" style="width:14px;height:14px;display:inline;vertical-align:middle;"></i> No obligation</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+    <div class="container">
+        <h2>STOP SCROLLING.<br>START DRIVING.</h2>
+        <p>Every day you wait is money left on the table. CDL drivers are earning $50K-$80K+ and companies can't hire fast enough.</p>
+        
+    </div>
+</section>
+
+<footer>
+    <p style="margin-top:.5rem;">Licensed by the Florida Department of Education</p>
+</footer>
+
+<script>
+document.getElementById('enrollForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var f = e.target;
+    var data = { firstName:f.firstName.value, lastName:f.lastName.value, phone:f.phone.value, email:f.email.value, service:'Class A CDL - $3000', message:'Language: '+(f.language.value||'N/A')+' | Start: '+(f.start.value||'N/A') };
+    var btn = f.querySelector('.btn-submit');
+    btn.textContent = 'SENDING...';
+    btn.disabled = true;
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://cdl-tampa-form.ilaunchyou.workers.dev/submit');
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function() { if(typeof fbq!=='undefined')fbq('track','Lead',{content_name:'CDL Class A',value:3000,currency:'USD'});
+        f.innerHTML = '<div class="success"><h3 style="color:#22C55E;font-family:Oswald;font-size:1.8rem;">YOU ARE IN!</h3><p style="color:#999;margin-top:1rem;">Your enrollment request has been received! Our team will contact you shortly. Get ready to change your life.</p></div>';
+    };
+    xhr.onerror = function() {
+        f.innerHTML = '<div class="success"><h3 style="color:#22C55E;font-family:Oswald;font-size:1.8rem;">THANK YOU!</h3><p style="color:#999;margin-top:1rem;">Your request has been received. Our team will contact you shortly.</p></div>';
+    };
+    xhr.send(JSON.stringify(data));
+});
+</script>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>
